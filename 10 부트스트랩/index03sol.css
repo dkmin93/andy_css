@@ -1,0 +1,19 @@
+/* 상품 상세 */
+.detail-box > .title {
+    font-size: 25px;
+}
+.detail-box > .price {
+    font-size: 28px;
+    font-weight: 500;
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+    padding: 10px 0; /* 위아래, 좌우 */
+}
+
+.detail-box > .delivery {
+    color: #777;
+}
+
+.detail-control > .price {overflow: hidden;}
+.detail-control > .price > .left {float: left;}
+.detail-control > .price > .right {float: right; font-size: 25px; font-weight: 600;}

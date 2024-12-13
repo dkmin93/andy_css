@@ -1,0 +1,110 @@
+* {margin: 0; padding: 0;}
+ul ,li {list-style: none;}
+a {text-decoration: none;}
+img {height: auto; max-width: 100%;}
+
+/* 웹 디자인 */
+@media(min-width: 767px) {
+    #wrap {
+        width: 960px;
+        margin: 0 auto;
+        border: 1px solid #e3e3e3;
+    }
+    .logo {
+        height: 200px;
+        background: url(images/bg.png);
+    }
+    .logo > h1 {
+        color: #ffff00;
+        font-size: 30px;
+        padding: 20px;
+    }
+    .gnb {
+        background-color: #c10000
+    }
+    .gnb ul li {
+        display: inline-block;
+    }
+    .gnb ul li a {
+        display: block;
+        color: #FFF;
+        padding: 20px 30px;
+    }
+    .gnb ul li a:hover {
+        background-color: #903;
+    }
+
+    /* 섹션 영역 */
+
+    .box {
+        overflow: hidden;
+    }
+    .box > .left {
+        float: left;
+        width: 700px;
+        padding: 20px;
+    }
+    .box > .right {
+        float: right;
+        width: 200px;
+        padding: 10px;
+        background-color: #e3e3e3;
+        height: 500px;
+    }
+    .footer {
+        background-color: #222222;
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+    }
+}
+
+/* 모바일 환경 */
+
+@media(max-width: 766px) {
+    #wrap {
+        width: 100%;                /* min-width를 활용해서 최소너비를 지정할 수도 있다 */
+    }
+    .logo {
+        height: 250px;
+        background: url(images/bg.png);
+    }
+    .logo > h1 {
+        color: #ffff00;
+        font-size: 30px;
+        padding: 20px;
+    }
+    
+    .gmb {
+        background-color: #c10000
+    }
+
+    .gmb ul li a {
+        display: block;
+        text-align: center;
+        color: #FFF;
+        padding: 7px;
+    }
+    .gmb ul li a:hover {
+        background-color: #903;
+    }
+
+    .box > .left {
+        padding: 20px;
+    }
+    .box > .right {
+        padding: 20px;
+    }
+    
+    .box > .right > img {
+        width: 100%;
+    }
+
+    .footer {
+        background-color: #222222;
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+    }
+    
+}

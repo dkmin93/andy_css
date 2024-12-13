@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    * {padding: 0; margin: 0;} /* 디자인 할때는 여백을 0 만들고 시작하는게 좋다 */
+    ul, li {list-style: none;}
+
+    .main {text-align: center;}
+    .main img {width: 100px; height: auto;}
+
+    .gnb ul {text-align: right;}
+    .gnb ul li {display: inline-block;}
+    .gnb ul li a {
+        display: block;
+        width: 60px;
+        height: 50px;
+        line-height: 50px;
+        text-decoration: none;
+        color: yellow;
+        font-size: 13px;
+        text-align: center;
+        }
+    .gnb ul li a:hover {
+        background-color: beige;
+    }
+    #header {background-color: black;}
+
+</style>
+
+
+</head>
+<body>
+    <header id="header">
+        <div class="main">
+            <p>
+                <img src="/03폰트 디스플레이/img/css3.png" alt="이미지">
+            </p>
+        </div>
+
+        <div class="gnb">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+</body>
+</html>

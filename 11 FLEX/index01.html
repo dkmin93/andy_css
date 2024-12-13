@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {background-color: yellow; padding: 10px;}
+        .box > .item {background-color: green; width: 50px; height: 50px;}
+
+        .container {
+            /* display: flex; flex는 container 박스가 block 배치된다  */
+            display: inline-flex; /* inline-flex는 container 박스가 inline 배치된다 */
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- 
+    flex는 바깥을 감싸는 container, 배치되는 요소 item으로 구분이 된다.
+    container에 적용하는 속성이 있고 item에 적용하는 속성이 있다.
+    -->
+
+    <div class="container box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+
+    <div class="container box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+
+    <hr>
+
+    <h3>flex-direction(아이템들의 배치방향)</h3>
+
+    <style>
+        .container2 {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    </style>
+
+    <div class="container2 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+
+    <hr>
+
+    <h3>flex-wrap (더 이상의 공간이 없을 때 컨테이너의 줄바꿈 설정)</h3>
+
+    <style>
+        .container3 {
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap: wrap; nowrap 줄바꿈 없는게 기본 값이다 */
+            /* flex-flow는 다이렉션과 wrap를 한번에 줄 수 있다 */
+            flex-flow: column wrap; /* column은 높이를 지정해야 줄바꿈이 일어난다 */
+
+        }
+    </style>
+
+    <div class="container3 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+    </div>
+
+</body>
+</html>
